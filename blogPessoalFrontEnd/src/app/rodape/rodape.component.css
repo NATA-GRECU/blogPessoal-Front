@@ -26,3 +26,7 @@ ul.social-network li {
 .fa-linkedin-square:hover{
     color: #0072b1;
 }
+
+.bg-blog{
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}

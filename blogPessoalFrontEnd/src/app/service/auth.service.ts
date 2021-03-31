@@ -22,13 +22,15 @@ export class AuthService {
     return this.http.post<User>('http://localhost:8080/usuarios/cadastrar', user)
   }
 
+  atualizar(user: User): Observable<User>{
+    return this.http.put<User>('http://localhost:8080/usuarios', user, { headers: {'Authorization':environment.token}})
+  }
+
   findUserById(id: number): Observable<User>{
     return this.http.get<User>(`http://localhost:8080/usuarios/${id}`, { headers: {'Authorization':environment.token}})
   }
 
-  getByIdUser(id: number): Observable<User>{
-    return this.http.get<User>(`http://localhost:8080/usuarios/${id}`)
-  }
+
 
   logado(){
     let ok: boolean = false

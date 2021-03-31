@@ -5,3 +5,6 @@
 .fs-18{
     font-size: 18pt;
 }
+.bg-blog{
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
